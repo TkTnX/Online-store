@@ -51,6 +51,7 @@ body {
   display: flex;
   padding: 15px;
   cursor: pointer;
+  transition: all 0.2s ease-in;
 }
 
 .nav-menu-right li:hover {
@@ -64,7 +65,49 @@ body {
   margin-top: -5px;
 }
 
+.added-products {
+  display: flex;
+  align-items: center;
+}
+
+.added-products-counter-styles {
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.322);
+  min-width: 30px;
+  margin-left: 10px;
+  text-align: center;
+  padding: 5px 5px;
+}
+
 /* card */
+
+.addBtnClass {
+  max-width: 200px;
+  padding: 10px;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+  cursor: pointer;
+
+  border-radius: 30px;
+  border: 2px solid #9b4747;
+  transition: all 0.2s ease-in;
+
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 20px;
+  width: 100%;
+}
+
+.addBtnClass:hover {
+  background-color: #9b4747;
+  color: white;
+}
 
 .shop {
   margin-top: 50px;
@@ -76,13 +119,14 @@ body {
 }
 
 .card {
+  position: relative;
   padding: 20px;
   margin: 45px;
   max-width: 300px;
-  max-height: 400px;
+  height: 400px;
   box-shadow: 0px 10px 40px 0px rgba(126, 155, 189, 0.35);
-  cursor: pointer;
   border-radius: 30px;
+  transition: all 0.2s ease-in;
 }
 
 .card:hover {
@@ -160,6 +204,10 @@ body {
   margin-top: 15px;
 }
 
+.footer-socials a {
+  color: #9b4747;
+}
+
 .footer-socials > * + * {
   margin-left: 30px;
 }
@@ -199,6 +247,10 @@ body {
 
   .nav-icon {
     display: none;
+  }
+
+  .card:last-child {
+    margin-bottom: 50px;
   }
 
   .footer-row {

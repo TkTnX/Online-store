@@ -32,9 +32,10 @@
                 <img src="./img/header/info.svg" alt="О нас" />
                 <div class="nav-icon">О нас</div>
               </li>
-              <li>
+              <li class="added-products">
                 <img src="./img/header/bakset.svg" alt="Корзина" />
                 <div class="nav-icon">Корзина</div>
+                <div class="added-products-counter" id="productsCounter"></div>
               </li>
             </ul>
           </div>
@@ -56,6 +57,11 @@
               <div class="card-price">133 650₽</div>
               <div class="card-before-price">135 000₽</div>
             </div>
+            <div class="add-btn">
+              <button type="button" class="addBtnClass" onclick="addProduct()">
+                Добавить в корзину
+              </button>
+            </div>
           </div>
           <!-- //* card -->
           <!-- card -->
@@ -74,6 +80,9 @@
               <div class="card-price">131 970₽</div>
               <div class="card-before-price">135 000₽</div>
             </div>
+            <button type="button" class="addBtnClass" onclick="addProduct()">
+              Добавить в корзину
+            </button>
           </div>
           <!-- //* card -->
           <!-- card -->
@@ -92,6 +101,9 @@
               <div class="card-price">117 839₽</div>
               <div class="card-before-price">149 000₽</div>
             </div>
+            <button type="button" class="addBtnClass" onclick="addProduct()">
+              Добавить в корзину
+            </button>
           </div>
           <!-- //* card -->
           <!-- card -->
@@ -110,6 +122,9 @@
             <div class="price">
               <div class="card-price" style="color: black">167 870₽</div>
             </div>
+            <button type="button" class="addBtnClass" onclick="addProduct()">
+              Добавить в корзину
+            </button>
           </div>
           <!-- //* card -->
           <!-- card -->
@@ -125,6 +140,9 @@
               <div class="card-price">23 124₽</div>
               <div class="card-before-price">24 600₽</div>
             </div>
+            <button type="button" class="addBtnClass" onclick="addProduct()">
+              Добавить в корзину
+            </button>
           </div>
           <!-- //* card -->
           <!-- card -->
@@ -146,6 +164,9 @@
               <div class="card-price">82 119₽</div>
               <div class="card-before-price">86 441₽</div>
             </div>
+            <button type="button" class="addBtnClass" onclick="addProduct()">
+              Добавить в корзину
+            </button>
           </div>
           <!-- //* card -->
           <!-- card -->
@@ -160,6 +181,9 @@
               <div class="card-price">650₽</div>
               <div class="card-before-price">800₽</div>
             </div>
+            <button type="button" class="addBtnClass" onclick="addProduct()">
+              Добавить в корзину
+            </button>
           </div>
           <!-- //* card -->
           <!-- card -->
@@ -169,13 +193,15 @@
             </div>
             <div class="card-title">
               27" Моноблок Apple iMac (Retina 5K, середина 2020 г.) MXWU2RU/A,
-              5120x2880, Intel Core i5 3.3 ГГц, RAM 8 ГБ, SSD 512 ГБ, AMD Radeon
-              Pro 5300, MacOS, серебристый
+              5120x2880, Intel Core i5 3.3 ГГц...
             </div>
             <div class="price">
               <div class="card-price">259 693₽</div>
               <div class="card-before-price">264 993₽</div>
             </div>
+            <button type="button" class="addBtnClass" onclick="addProduct()">
+              Добавить в корзину
+            </button>
           </div>
           <!-- //* card -->
         </div>
@@ -213,4 +239,5 @@
       </div>
     </footer>
   </body>
+  <script src="scripts/script.js"></script>
 </html>
